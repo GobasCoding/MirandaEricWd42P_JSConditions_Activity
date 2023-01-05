@@ -1,0 +1,34 @@
+<script>
+    let grade = prompt("Enter your Grade:");
+
+    let result = "";
+    
+    //CONDITIONS
+
+    if(grade >=90 && grade <= 100) {
+        result = "S Grade" ;
+    }
+    else if(grade >=80 && grade <=89) {
+        result = "A Grade";
+    }
+    else if(grade >=70 && grade <=79) {
+        result = "B Grade";
+    }
+    else if(grade >=60 && grade <=69) {
+        result = "C Grade";
+    }
+    else if(grade >=50 && grade <=59) {
+        result = "D Grade";
+    }
+    else if(grade >=50 && grade <=39) {
+        result = "E Grade";
+    } 
+    else if(grade >=0 && grade <=50) {
+        result = "Student has failed";
+    }
+    else 
+    {
+        result = "Invalid Grade"
+    }
+    alert(result)
+</script>

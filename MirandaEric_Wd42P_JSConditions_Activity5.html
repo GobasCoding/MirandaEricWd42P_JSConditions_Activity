@@ -1,0 +1,18 @@
+<script>
+    const month = prompt("Please input number of a month:");
+    const year = prompt("Please input a year:");
+
+        if (month == 0) {
+            alert("INVALID");
+        } else if (month > 12) {
+            alert("INVALID");
+        }else if (month == 2  &&  (0 == year % 4) && (0 != year % 100) || (0 == year % 400)) {
+            alert ("29 Days");
+        } else if (month == 2  &&  !(0 == year % 4) && (0 != year % 100) || (0 == year % 400)) { 
+            alert ("28 Days");
+        } else if (month == 4, 6, 9, 11  &&  (0 == year % 4) && (0 != year % 100) || (0 == year % 400)) {
+            alert("30 Days");
+        } else {
+            alert("31 Days");
+        }
+</script>
